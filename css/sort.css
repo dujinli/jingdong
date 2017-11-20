@@ -1,0 +1,190 @@
+/*
+* @Author: Administrator
+* @Date:   2017-11-20 15:32:01
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-11-20 17:08:35
+*/
+.sort_box{
+	width: 100%;
+}
+
+/* 顶部搜索框部分 */
+.sort_search{
+	width: 100%;
+	height: 45px;
+	box-sizing: border-box;
+	padding: 0px 50px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	border-bottom: 1px solid #ccc;
+	background-image: url("../images/header-bg.png");
+  	background-size: 1px  44px;
+  	background-repeat: repeat-x;
+	/* overflow: hidden; */
+}
+.sort_search .search{
+	width: 100%;
+	height: 100%;
+}
+
+.sort_search .search input{
+	width: 100%;	
+	height: 30px;
+	padding-left: 15px;
+	border-radius: 5px;
+	box-sizing: border-box;
+	margin-top: calc((45px - 30px) / 2);
+	border: 1px solid #ccc;
+}
+.sort_search a{
+	/* display: block; */
+	position: absolute;
+	top: 0;
+	width: 40px;
+	height: 44px;
+	padding: 10px 11px;
+	box-sizing: border-box;
+	background-image: url('../images/jd-sprites.png');
+	background-clip: content-box;
+	/* background-repeat: no-repeat; */
+	background-origin: content-box;
+	background-size: 200px 200px;
+}
+.sort_search a:first-child{
+	left: 0;
+	background-position: -20px 2px;
+}
+.sort_search a:last-child{
+	right: 0;
+	background-position: -60px 2px;
+}
+
+/* 主题内容部分 */
+
+/* 左边导航部分 */
+main{
+	display: flex;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+  	left: 0;
+	padding-top: 45px;
+	box-sizing: border-box;
+	/* position: relative; */
+}
+main aside{
+	width: 90px;
+	height: 100%;
+	overflow: hidden;
+}
+main aside ul{
+	width: 100%;
+}
+
+main aside ul li{
+	width: 100%;
+	height: 50px;
+	border-right: 1px solid #ccc;
+  	border-bottom: 1px solid #ccc;
+  	box-sizing: border-box;
+	font-size: 14px;
+	background-color: #f3f4f6;
+	line-height: 49px;
+	text-align: center;
+}
+
+/* 主题部分右边内容区域 */
+section{
+  flex:1;
+  height: 100%;
+  background-color:#fff;
+  padding-left: 15px;
+  padding-right: 10px;
+  padding-bottom: 30px;
+  overflow-y: auto;
+}
+
+/* <!-- 热门推荐 --> */
+.hot_Recommend{
+	width: 100%;
+	overflow: hidden;
+}
+
+.hot_Recommend h4,.hot_guide h4,.hot_class h4,.hot_skirt h4{
+	width: 100%;
+	font-size: 12px;
+	color: #888;
+	padding: 20px 0px 10px;
+}
+.hot_Recommend ul{
+	width: 100%;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	/* box-sizing: border-box; */
+	overflow: hidden;
+}
+.hot_Recommend ul li{
+	width: 33.33333%;
+	height: 50px;
+	box-sizing: border-box;
+	line-height: 50px;
+	text-align: center;
+	float: left;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+/* 热门导购 */
+.hot_guide{
+	width: 100%;
+	overflow: hidden;
+}
+.hot_guide ul{
+	width: 100%;
+}
+
+.hot_guide ul li{
+	width: 33.3333%;
+	float: left;
+	text-align: center;
+}
+.hot_guide ul li img{
+	width: 100%;
+}
+
+/* 热门品类 */
+.hot_class{
+	width: 100%;
+	overflow: hidden;
+}
+.hot_class ul{
+	width: 100%;
+}
+
+.hot_class ul li{
+	width: 33.3333%;
+	float: left;
+	text-align: center;
+}
+.hot_class ul li img{
+	width: 100%;
+}
+
+/* 裙装 */
+.hot_skirt{
+	width: 100%;
+}
+.hot_skirt ul{
+	width: 100%;
+}
+
+.hot_skirt ul li{
+	width: 33.3333%;
+	float: left;
+	text-align: center;
+}
+.hot_skirt ul li img{
+	width: 100%;
+}
